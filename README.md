@@ -1,5 +1,5 @@
 
-# TypeHapily-Server
+# TypeHapily
 A Typescript based boilerplate for HAPIJS with TypeORM & Dynamic Linting
  
 ### Run the following steps to start the project

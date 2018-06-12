@@ -1,0 +1,52 @@
+{
+  "name": "typehapily",
+  "version": "0.1.0",
+  "description": "Typehapily Server",
+  "main": "dist/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "tslint src/**/*.ts --project ./tslint.json -t verbose",
+    "lint:live": "chokidar src/**/*.ts -c \"tslint src/**/*.ts --project ./tslint.json -t verbose\"",
+    "build": "npm run lint && tsc",
+    "build:live": "npm run lint && concurrently --kill-others \"npm run lint:live\" \"nodemon\""
+  },
+  "author": "Tejus Pratap <tejzpr@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@types/dotenv": "4.0.2",
+    "@types/hapi": "17.0.7",
+    "@types/joi": "^13.0.8",
+    "@types/lodash": "^4.14.109",
+    "@types/node": "9.6.0",
+    "@types/winston": "2.3.8",
+    "blipp": "3.0.0",
+    "chalk": "2.3.2",
+    "class-validator": "^0.8.5",
+    "confidence": "3.0.2",
+    "dotenv": "5.0.1",
+    "glue": "5.0.0",
+    "good": "8.1.1",
+    "good-winston": "4.0.0",
+    "hapi": "17.2.3",
+    "joi": "^13.3.0",
+    "joi-country-extension": "^1.0.0",
+    "joi-date-extensions": "^1.2.0",
+    "lodash": "^4.17.10",
+    "pg": "7.4.1",
+    "pg-hstore": "2.3.2",
+    "reflect-metadata": "0.1.12",
+    "typeorm": "^0.2.7",
+    "winston": "2.4.1"
+  },
+  "devDependencies": {
+    "chokidar-cli": "1.2.0",
+    "concurrently": "3.5.1",
+    "mocha": "5.0.4",
+    "nodemon": "1.17.2",
+    "should": "13.2.1",
+    "tslint": "5.9.1",
+    "tslint-config-airbnb": "5.8.0",
+    "tslint-eslint-rules": "5.1.0",
+    "typescript": "2.7.2"
+  }
+}

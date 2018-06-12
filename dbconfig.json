@@ -1,0 +1,56 @@
+{
+  "dev": {
+    "host": "localhost",
+    "port": 5432,
+    "type": "postgres",
+    "pool": {
+      "max": 2,
+      "min": 0,
+      "acquire": 30000,
+      "idle": 10000
+    },
+    "synchronize": true,
+    "logging": true,
+    "username": "username",
+    "password": "userPass&*",
+    "database": "my_database",
+    "ssl" : {
+
+    }
+  },
+  "test": {
+    "host": "localhost",
+    "port": 5432,
+    "type": "postgres",
+    "pool": {
+      "max": 2,
+      "min": 0,
+      "acquire": 30000,
+      "idle": 10000
+    },
+    "synchronize": true,
+    "username": "username",
+    "password": "userPass&*",
+    "database": "my_database",
+    "ssl" : {
+
+    }
+  },
+  "production": {
+    "host": "localhost",
+    "port": 5432,
+    "type": "postgres",
+    "pool": {
+      "max": 2,
+      "min": 0,
+      "acquire": 30000,
+      "idle": 10000
+    },
+    "username": "username",
+    "password": "userPass&*",
+    "database": "my_database",
+    "ssl" : {
+
+    }
+  }
+}

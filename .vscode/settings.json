@@ -1,0 +1,6 @@
+{
+    "python.pythonPath": "D:\\SDK\\Anaconda\\envs\\python3\\python.exe",
+    "editor.tabSize": 4,
+    "tslint.enable": true,
+    "tslint.autoFixOnSave": true,
+}

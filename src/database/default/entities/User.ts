@@ -36,7 +36,7 @@ export class User {
     @IsEmail()
     recoveryEmail: string;
 
-    @Column()
+    @Column({type: "time without time zone"})
     @IsDate()
     dob: Date;
 

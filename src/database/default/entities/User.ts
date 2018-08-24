@@ -1,6 +1,6 @@
-import { Entity, Column, PrimaryGeneratedColumn, BeforeInsert, BeforeUpdate } from "typeorm";
+import { Entity, Column, PrimaryGeneratedColumn, BeforeInsert } from "typeorm";
 import {IsDate, IsEmail} from "class-validator";
-import {createHash} from '../../../utilities/encryption';
+import {createHash} from '@utilities/encryption';
 import { Name } from './Name';
 import { Address } from './Address';
 

@@ -1,7 +1,7 @@
 import { Connection, getConnection, EntityManager, Repository} from 'typeorm';
-import {User} from '../entities/User';
-import {Name} from '../entities/Name';
-import {Address} from '../entities/Address';
+import {User} from '@database/entities/User';
+import {Name} from '@database/entities/Name';
+import {Address} from '@database/entities/Address';
 
 export async function createUser(fname:string, mname:string|null , lname:string, username:string, password:string,
     dob:string, email:string, recoveryEmail:string|null, address1:string, address2:string|null, city:string,

@@ -2,13 +2,11 @@ const Dotenv = require('dotenv');
 const chalk = require('chalk');
 const fs = require('fs');
 const dbConfig = require("./dbconfig");
-if(!process.env.ENTITY_ROOT)
-{
-    console.error(chalk.red.bold("Please define ENTITY_ROOT environment variable."));
-    process.exit(1);
-}
+let ENTITY_ROOT = 'src';
 
-const ENTITY_ROOT = process.env.ENTITY_ROOT;
+if (fs.existsSync(`dist/database`)) {
+    ENTITY_ROOT = 'dist';
+}
 
 console.info(chalk.green.bold(`:::Using Entity Root: ${ENTITY_ROOT}`))
 

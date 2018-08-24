@@ -1,8 +1,5 @@
 import Joi from 'joi';
-import * as UserRepository from '../database/default/repositories/UserRepository';
-import JoiCountryExtension from 'joi-country-extension';
-import JoiDateExtens from 'joi-date-extensions';
-const ExtendedJoi:any = Joi.extend(JoiCountryExtension, JoiDateExtens);
+import * as UserRepository from '@database/repositories/UserRepository';
 
 export const createUserValidationSchema:any = {
     fname: Joi.string().required(),
@@ -18,7 +15,7 @@ export const createUserValidationSchema:any = {
     address2: Joi.string(),
     state: Joi.string().required(),
     city: Joi.string().required(),
-    country: ExtendedJoi.string().country().required(),
+    country: Joi.string().required(),
     zip: Joi.string().required(),
     mobilephone: Joi.string().required(),
     homephone: Joi.string(),

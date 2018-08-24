@@ -18,7 +18,7 @@ New routes can be created by creating a route_name.ts file in the src/routes dir
 ### Changelog
 #### 1.0
 > 1. Removed required ENTITY_ROOT declaration
-> 2. Support for shortand module paths 
+> 2. Support for shorthand module paths 
 > 3. config/env for handling environment variables and server startup 
 > 4. Added @types
 > 5. Added support for tests & coverage

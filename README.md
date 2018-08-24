@@ -22,4 +22,4 @@ New routes can be created by creating a route_name.ts file in the src/routes dir
 > 3. config/env for handling environment variables and server startup 
 > 4. Added @types
 > 5. Added support for tests & coverage
-> 
+> 6. Use custom TypeOrm fork for Oracle TNS support 

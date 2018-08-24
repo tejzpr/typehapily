@@ -105,6 +105,7 @@ export const getServer: () => Promise<Hapi.Server> = async (): Promise<Hapi.Serv
 
     lodashForEach(routes, (value:any, key:any) => {
         serverRoutes.push(...value.map((route:any) => {
+            route.path = ROUTE_PREFIX + route.path;
             return route;
         }));
     });
